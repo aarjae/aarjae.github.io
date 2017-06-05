@@ -18,7 +18,7 @@ title: The Flow
 email: theflowdev@gmail.com
 description: A blog about my journey with computers and coffee.
 baseurl: # the optional subpath of your site, e.g. "/blog"
-url: https://theflowdev.github.io"
+url: https://theflowdev.github.io
 author:
   name: Raaj Ahiable
   twitter: theflowdev
