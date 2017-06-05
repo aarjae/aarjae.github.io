@@ -1,5 +1,5 @@
 # Theme Skin
-skin: soft # default, night, plum, sea, soft, steel
+skin: steel # default, night, plum, sea, soft, steel
 
 # Theme Text
 t:
@@ -7,7 +7,7 @@ t:
   skip_primary_nav: "Skip to primary navigation"
   skip_content: "Skip to content"
   skip_footer: "Skip to footer"
-  menu: "Menu"
+  menu: "Click Me"
   home: "Home"
   newer: "Newer"
   older: "Older"
