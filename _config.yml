@@ -14,17 +14,17 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 lang: en-US
-title: My Awesome Site
-email:
-description:
+title: The Flow
+email: theflowdev@gmail.com
+description: A blog about my journey with computers and coffee.
 baseurl: # the optional subpath of your site, e.g. "/blog"
-url: # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url: https://theflowdev.github.io"
 author:
-  name:
-  twitter:
+  name: Raaj Ahiable
+  twitter: theflowdev
   picture:
-twitter_username:
-github_username:
+twitter_username: theflowdev
+github_username: theflowdev
 logo: # path of site logo, e.g. "/assets/images/logo.png"
 
 # Build settings
