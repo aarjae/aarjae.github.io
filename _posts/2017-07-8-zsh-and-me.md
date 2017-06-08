@@ -9,9 +9,10 @@ tags :
     - tutorial
 ---
 
-Now we all know the power of the terminal. It's scary but once you get to understand it you love it(At least in my case). It arguably makes work faster though the GUI guys may argue otherwise. Now you have your typical terminal where you bang in commands all day long and you are cool with it. But at a point in time you begin to want more. Maybe you want the terminal to be smarter, have a little more colors cos the current color combination is so boring and you are so lazy you want some more autocompletion capabilities.
+Now we all know the power of the terminal. It's scary but once you get to understand it you love it(At least in my case). It arguably makes work faster though the GUI guys may argue otherwise. So I was checking out a video tutorial online and I saw the instructor using a really beautiful shell, like so beautiful. Well he said "For all those wondering I am using Zsh"...
 
-Well well, it's Zsh to the rescue
+Whooaa, now there goes me, straight to Google to search Zsh. I spent my free time reading about [Zsh](https://en.wikipedia.org/wiki/Z_shell), why I would want to use Zsh and Oh my God(Zsh), those lovely themes!. Realized I could change themes and add plugins with a framework called [Oh-my-zsh](https://en.wikipedia.org/wiki/Z_shell). 
+
 
 
 
