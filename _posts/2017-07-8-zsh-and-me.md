@@ -10,8 +10,8 @@ tags :
 ---
 Now we all know the power of bash. 
 
-It's scary but once you get to understand it you love it (At least in my case). It arguably makes work faster though the GUI guys may argue otherwise. So I was checking out a video tutorial online and I saw the instructor using a really beautiful shell, like so beautiful. Well he said "For all those wondering I am using Zsh"...
-Whooaa, now there goes me, straight to Google to search Zsh. I spent my free time reading about [Zsh](https://en.wikipedia.org/wiki/Z_shell), why I would want to use Zsh and Oh my God(Zsh), those lovely themes!. Realized I could change themes and add plugins with a framework called [Oh-my-zsh](https://ohmyz.sh/). 
+It's scary but once you get to understand it you love it (At least in my case). It arguably makes work faster though the GUI guys may argue otherwise. So I was checking out a video tutorial online and I saw the instructor using a really beautiful shell, like so beautiful. Well he said "For all those wondering I am using Zsh..."
+Whooaa, there goes me, straight to Google to search Zsh. I spent my free time reading about [Zsh](https://en.wikipedia.org/wiki/Z_shell), why I would want to use Zsh and Oh my God(Zsh), those lovely themes!. Realized I could change themes and add plugins with a framework called [Oh-my-zsh](https://ohmyz.sh/). 
 
 Check out some themes : 
 
@@ -29,7 +29,7 @@ First you install zsh from your distro's repos. If you are on Ubuntu, Debian or 
 
 > sudo apt install zsh
 
-If you are on Arch or Manjaro(I use Manjaro), you can simply install from the Arch User Repositories.
+If you are on Arch or Manjaro (I use Manjaro), you can simply install from the Arch User Repositories.
 
 Once you are done installing Zsh, you can have a peek at it by simply typing in Zsh in your terminal. That should take you into Zsh. But hey, you want Zsh as default right? 
 
