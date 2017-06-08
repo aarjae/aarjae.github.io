@@ -53,11 +53,11 @@ To install, use this command (Remember Arch users can just keep using the AUR to
 
 > git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 
-There is a beautiful config file called '.zshrc' in your home folder. Remember it's hidden so just enable hidden files or folder in your file manager. You can do this by simply using the shortcut <kbd>Ctrl<kbd> + <kbd>H<kbd>
+There is a beautiful config file called '.zshrc' in your home folder. Remember it's hidden so just enable hidden files or folder in your file manager. You can do this by simply using the shortcut <kbd>Ctrl</kbd> + <kbd>H</kbd>
 
-Open the zshrc file with your favorite text editor. Look for the plugins entry and add 'zsh-autocompletion' to it
+Open the zshrc file with your favorite text editor. Look for the plugins entry and add 'zsh-syntax-highlighting' to it. It should always be the last plugin in the array.
 
-![zsh-autocompletion](/assets/image/zshrc-plugins.png)
+![zsh-syntax-highlighting](/assets/image/zshrc-plugins.png)
 
 Save the file and reload, your colors may finally show up. 
 You can browse this [link](https://github.com/robbyrussell/oh-my-zsh/wiki/themes) for themes to choose from. Once you find a nice theme from the list, you open the .zshrc file and edit the theme entry
