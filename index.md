@@ -1,7 +1,6 @@
 ---
 layout: home
+image : assets/image/cover.jpeg
 ---
 
-```yaml
-image: /assets/image/coffee.png
-```
+
