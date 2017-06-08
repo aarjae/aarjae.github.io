@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 lang: en-US
-title: The Flow
+title: The Flow - A blog about coding and yummy coffee ;).
 email: theflowdev@gmail.com
 description: A blog about coding and coffee.
 baseurl: # the optional subpath of your site, e.g. "/blog"
