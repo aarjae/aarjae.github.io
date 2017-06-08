@@ -4,4 +4,3 @@ I mostly spend time tweaking my Linux desktop, writing some Javascript and watch
 
 For now that's all I have to say, so grab yourself a cup of copffe and lets go on a nice roller coaster ride!
 
-<kbd>Cheers<kbd>
