@@ -1,4 +1,4 @@
 ---
 layout: home
-image : assets/image/coffee.jpeg
+image : assets/image/coffee.png
 ---
