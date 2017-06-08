@@ -1,6 +1,6 @@
 ---
 title : "She sells seashells by the Z shell"
-image : /assets/image/zsh-hero.png
+image : /assets/image/seashell-cover.jpg
 layout : post
 excerpt : "An introduction to making your terminal beautiful and easy cos well, we use the terminal a lot"
 tags : 
@@ -64,9 +64,9 @@ You can browse this [link](https://github.com/robbyrussell/oh-my-zsh/wiki/themes
 
 ![zshrc](/assets/image/zshrc.png)
 
-Now you are done, you have a really beautiful terminal you can be proud anytime you open it. I will be talking about some interesting plugins and more customizations you can add to Zsh in my next post so stay tuned.
+Now you are done, you have a really beautiful terminal you can be proud anytime you open it. I will be talking about some interesting plugins and more customizations you can add to Zsh in my next post so stay tuned. Now go grab yourself some coffee or tea and enjoy your new shell.
 
-By the way, check out my Zsh!
+Hey wait, check out my Zsh theme!. It's called lambda-mod
 ![zsh-hero](/assets/image/zsh-hero.png)
  
 
