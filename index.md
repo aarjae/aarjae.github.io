@@ -1,4 +1,7 @@
 ---
 layout: home
-image : assets/image/coffee.png
 ---
+
+```yaml
+image: /assets/image/coffee.png
+```
