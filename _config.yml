@@ -27,6 +27,9 @@ twitter_username: theflowdev
 github_username: theflowdev
 logo: "assets/image/coffee.png"
 
+  disqus:
+    shortname: theflowdev-github-io-blog
+
 # Build settings
 markdown: kramdown
 theme: jekyll-theme-basically-basic
