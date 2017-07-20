@@ -14,9 +14,9 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 lang: en-US
-title: The Flow
+title: Raajable
 email: theflowdev@gmail.com
-description: A blog about coding and coffee.
+description: A blog about tech, music and coffee.
 baseurl: # the optional subpath of your site, e.g. "/blog"
 url: https://theflowdev.github.io
 author:
