@@ -3,10 +3,7 @@ title: About Me
 layout: about
 ---
 
-<h1 style = "text-align : center"> Hey there buddy </h1>
-I am Raaj, just a regular techie who loves to talk about tech all day long!.
-I mostly spend time tweaking my Linux desktop, writing some Javascript and Python and watching tech reviews. This blog will mostly be for the open source projects I work on, a few blog posts on how I get through on life and a few pictures I think are worth sharing :).
+<h1 style = "text-align : center"> Hey </h1>
+Hi I am Raaj. So I spend all day writing software and talking about tech. I love Python and recently just fell in love with Javascript. Node.JS blows my mind away. This blog is about my journey as a programmer, where I document new things I learn and also my thoughts on the industry.
 
-
-For now that's all I have to say, so grab yourself a cup of coffee and lets go on a roller coaster ride.
 
