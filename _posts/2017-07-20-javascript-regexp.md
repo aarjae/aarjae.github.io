@@ -14,18 +14,22 @@ When I finally decided to learn them, I realised with some good concentration I 
 You can create a regex in Javascript in two ways;
 
 ### Using a regex literal
-> var regexp = /abcde/
+```javascript
+var regexp = /abcde/
+``` 
 
 ### Using a constructor function
-> var regexp = new RegExp('abcde')
-
+```javascript
+ var regexp = new RegExp('abcde')
+```
 It's advisable to use the regex literal if your regexp is going to be fixed throughout the life of your program and because the Javascript interpreter compiles it at once while it is better to use the constructor function if your regexp wont be fixed and is obtained from an external source, let's say user input.
 
 When you create a regexp, it is made an object meaning you can use methods on it. An example is the test method which returns true or false depending on whether the match is found. 
 
 ### Example
+
 > var regexp = /abc/
 >
-> console.log(regexp.test('abc)) //This returns true
+> console.log(regexp.test('abc')) //This returns true
 >
-> console.log(regexp.test('happy)) //This returns false
+> console.log(regexp.test('happy')) //This returns false

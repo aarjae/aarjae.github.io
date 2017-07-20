@@ -1,5 +1,5 @@
 ---
-title : "She sells seashells by the Z shell"
+title : "She sells Z shells by the seashore."
 image : /assets/image/seashell-cover.jpg
 layout : post
 excerpt : "An introduction to making your terminal beautiful and easy cos well, we use the terminal a lot"
