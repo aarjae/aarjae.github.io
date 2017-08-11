@@ -21,15 +21,16 @@ Let's try to access a node app running on localhost with ngrok now.
 
 ## Setting Up ngrok on Linux 
 First you head over to [the ngrok website](https://ngrok.com/download) and download the executable for 
-your device. You unzip it and you have a single file called ngrok. We need to set the permissions to allow
-it run as an executable. Open the terminal and run 
+your device. Then you sign up. You will be given an authtoken after you sign up. We shall use that later
+Unzip the file you downloaded and you will have a single file called ngrok. We need to set permissions to allow
+it run as an executable. Open the terminal in the directory and run 
 > sudo chmod a+x
 
 Once you are done, you simply run
 > ./ngrok
 
-Ngrok should spit out a long list of stuff. Great, ngrok is working great. Let us set up a simple express
-app on localhost and start serving it over the web. This is my file
+ngrok should spit out a long list of stuff. Great, ngrok is working. Let us set up a simple express
+app called server.js on localhost and start serving it over the web. This is my code
 
 ``` javascript
 const express = require('express');
@@ -41,3 +42,32 @@ app.get('/', function(req, res){
 
 app.listen(3000);
 ```
+
+In this example, we set up a simple node server on ``` localhost:3000 ```. Normally you can only access this own 
+your own machine. Time to put it up on the web!.
+
+Run the node app
+> node server.js
+
+Then you head over to the ngrok directory. We need to set up the authtoken given to us on the ngrok site.
+Let's presume our authtoken is YD7838DH8D
+We do that like this in the ngrok directory
+> ./ngrok authtoken YD7838DH8D
+
+That should set up our authtoken. Now we need to tell ngrok to make available our Express app which is 
+running on port 3000 to a public url. You do that like this 
+> ./ngrok http 3000
+
+A neat CLI dashboard should appear. Something like this 
+![ngrok-cli](/assets/image/ngrok-dashboard.png)
+
+The web interface is the link to a graphical dashboard in your browser to monitor server analytics
+The Forwarding entry is a link to access your Express app over the internet
+
+![final](/assets/image/ngrok-final.png)
+
+All we need to do is copy that `Forwarding` link and we can share it with friends to access our express app
+from anywhere in the world!
+
+
+Cheers, enjoy!
