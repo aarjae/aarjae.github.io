@@ -27,8 +27,13 @@ Websockets is a new HTTP thing that fixes this problem. With websockets, a clien
 
 First let's create a new Express project, the npm ritual. Create a folder and open a terminal to it and run
 > npm init
+
+
 We add all the required info then we download the modules we need, express, ejs and socket.io
+
+
 > npm i --save express ejs socket.io
+
 
 Let's create a basic express server and add socket.io functionality
 ``` javascript
@@ -48,11 +53,11 @@ http.listen(3000);
 Socket.IO is event based. Let's add an event handler that prints to the screen.
 
 ```javascript
-io.on('connection', function(socket){
+io.on('connection', function(socket){ 
     console.log('A user connected!');
 })
 ```
-
+When a connection is opened, the connection event is fired. The connection object is passed to the socket variable. A websocket is alive in the socket object
 Remember websockets only work when the client agrees to the connection, so we need to add some code client side to make this happen. We create an index.html file and add this
 
 ```html
@@ -62,4 +67,64 @@ Remember websockets only work when the client agrees to the connection, so we ne
         </script>
 ```
 
-This         
+This starts socket.io on the client side and we are in business. When we run our app, we get *A user connected* printed to the screen. Each time we open a new tab and connect, it prints. A websocket is alive. There are other built in events for the socket object such as *disconnect*. Let's try it out.  
+
+```javascript
+socket.on('disconnect', function(){
+    console.log('A user disconnected!');
+})
+```
+
+When we open a tab and connect, *A user connected* prints to our console. When we close the tab, *A user disconnected* is printed out to our console. Our websocket is working!. What makes socket amazing is you can create your own events, once those events are triggered, you can push some data to the client or to the server. It works both ways!. Let's create a timer that fires a storm event 5 seconds after the client makes a request and make the client fire back an event to show they have received it.
+
+
+First we need to create an event and the message, server side
+```javascript
+io.emit('storm', 'A storm is coming') //The first argument is the event name, second is the message
+```
+
+We plug it into a timer function then plug it into the connection event. At the end we should have something like this
+
+```javascript
+io.on('connection', function(socket){
+	console.log('A new client has connected');
+	socket.on('disconnect', function(){
+		console.log('A client has disconnected');
+	})
+
+    //The timer function to emit the event 5 seconds after client connects
+	setTimeout(function(){
+		io.emit('storm', 'A storm is coming!')
+	}, 5000);
+		
+})
+```
+
+Then we plug in a space in our client side for the message to show when the server sends it.Lets also plug in jquery to make this a bit easier!
+```html
+<p id = 'message'></p>
+ <script src='/socket.io/socket.io.js'></script>
+ <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+        <script>
+            var socket = io();
+            //Storm event handler
+            socket.on('storm', function(msg){
+                $('#message').append(msg) //This adds the msg variable which contains the message in our event
+            })
+        </script>
+```
+
+There!. Once you start the app and open the page, a websocket will be created. 5 seconds later, the storm event will be emitted by the server. On emission, the storm event handler in our client will be triggered and add the message to our paragraph tag. The message should then pop up on our page. Let's take this a bit further and send a message to our server that we received it. Same process, we emit an event on the client side, create an event handler on the server side to handle that event. Well, talk is cheap, let me show you the code
+
+
+The event is emitted client side
+```javascript
+socket.emit('received', 'The storm message has been well received!');
+```
+
+The event is caught server side
+```javascript
+socket.on('received', function(msg){
+    console.log(msg)
+})
+```
