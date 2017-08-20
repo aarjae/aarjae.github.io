@@ -32,7 +32,7 @@ First let's create a new Express project, the npm ritual. Create a folder and op
 We add all the required info then we download the modules we need, express, ejs and socket.io
 
 
-> npm i --save express ejs socket.io
+> npm i --save express socket.io
 
 
 Let's create a basic express server and add socket.io functionality
