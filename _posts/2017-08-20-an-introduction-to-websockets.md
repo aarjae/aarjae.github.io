@@ -7,7 +7,7 @@ tags :
     - socket.io
     - node.JS
 ---
-![websockets](assets/image/websocket-heading.gif)
+![websockets](/assets/image/websocket-heading.gif)
 When thinking about websockets, the first thing to come to mind is *real-time*. How do you push a notification
 to your user on the client-side. How do you send a user a message or tell them something new has happened, in that same moment it happened. Well websockets are your answer.
 
