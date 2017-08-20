@@ -128,3 +128,10 @@ socket.on('received', function(msg){
     console.log(msg)
 })
 ```
+
+When we run our app again, the storm message should show client side and the server should spit out a message into the console that our storm message was well received!
+
+
+I am encountering an error where the storm message is appearing twice on the client side. If you find or know  the reason, please show me how to fix that in the comments, thanks.
+
+This is the [code](https://github.com) of the entire example. Happy coding!
