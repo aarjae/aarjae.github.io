@@ -131,6 +131,6 @@ socket.on('received', function(msg){
 
 When we run our app again, the storm message should show client side and the server should spit out a message into the console that our storm message was well received!
 
-
+If I made any mistakes or got some facts wrong, it will be great if you point them out to me. Thanks :)
 
 This is the [code](https://github.com/raajable/socketIO-example) of the entire example. Happy coding!
