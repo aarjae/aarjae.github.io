@@ -1,7 +1,7 @@
 ---
 layout: home
 image : assets/image/cover.jpg
-alt_title: "A blog about tech, music and coffee"
+alt_title: "Yet another web developer's blog"
 ---
 
 
