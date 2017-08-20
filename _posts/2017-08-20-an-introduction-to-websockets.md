@@ -9,6 +9,7 @@ tags :
 ---
 ![websockets](/assets/image/websocket-heading.gif)
 
+
 When thinking about websockets, the first thing to come to mind is *real-time*. How do you push a notification
 to your client on the client-side. How do you send a client a message or tell them something new has happened, in that same moment it happened. Well websockets are your answer.
 
