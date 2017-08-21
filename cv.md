@@ -1,11 +1,8 @@
 ---
-title : My Projects
-layout : about
+title: Curriculum Vitæ
+layout: cv
+actions:
+  - label: "Download as PDF"
+    icon: pdf
+    url: "#pdf-asset"
 ---
-
-> # A very buggy Telegram utility bot
->> A telegram bot meant to experiment around with Node.JS [Check it out here](https://github.com/theflowdev/bumbleBee)
-
-> # Hyde
->> A simple Content Management System powered by Jekyll
-
