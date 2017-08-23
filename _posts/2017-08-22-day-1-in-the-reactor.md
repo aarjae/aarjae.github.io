@@ -93,7 +93,7 @@ This example here is static, in normal html. What if we wanted to change any of 
 </html>
 ```
 
-Let's analyse all our code one by one. First we created a data structure, an array to hold all of our provisions and called it *provisions*. Then we set out to build our elements using the method *React.createElement()*. The first argument, *ul* is the name of the element we wish to create. The second argument is the properties. We wish to give our *ul* element a class. In React, the *class* word is reserved so we have to use *className*. The third argument is theh children we wish to add to the ul element. Children can range from a string to another element. Inside our *ul* element we wish to create *li* children with each one holding a provision stored in our array. We can easily use the .map method to iterate through each provision in our array and on each provision, we will create a new *li* element to hold the provision. Let's look at this code again.
+Let's analyse all our code one by one. First we created a data structure, an array to hold all of our provisions and called it *provisions*. Then we set out to build our elements using the method *React.createElement()*. The first argument, *ul* is the name of the element we wish to create. The second argument is the properties. We wish to give our *ul* element a class. In React, the *class* word is reserved so we have to use *className*. The third argument is the children we wish to add to the ul element. Children can range from a string to another element. Inside our *ul* element we wish to create *li* children with each one holding a provision stored in our array. We can easily use the .map method to iterate through each provision in our array and on each provision, we will create a new *li* element to hold the provision. Let's look at this code again.
 
 ```javascript
 //Create *ul* element, on each item in array, create a child element called *li* to hold that item
@@ -106,3 +106,13 @@ Note that we used ES6 arrow functions. This is key because it makes our code cle
 React's style is much more handy because now our code has the ability to scale and we can easily change or remove the provision items just by changing the items in the provisions array. Super cool right.
 
 You may grab the code from [here](https://gist.github.com/raajable/9282631bbe3d32d463f54bafdfbe16f7)
+
+# Third Post coming in at 5:18
+### Reusability
+When thinking about resusability in an Object Oriented Programming World, we think Classes. Classes allow us to describe a thing, then we can create instances of that class called objects. Now enough with the college OOP talk. Let's get to business
+
+
+Now let's say we have a certain piece of UI that appears so many times on our webpage. Do we hard code the UI each time. Don't Repeat Yourself. Never. Classes to the rescue. I understand there are several ways to create React components but so far I know of two. 
+
+
+The common style is using the React.createClass() method. This style is very popular in a lot of codebases around the world but it may be deprecated soon. We don't want to write code that will break soon so let's go for a newer style that makes use of the new ES6 class inheritance feature. Yeeaah, let's be progressive :)
