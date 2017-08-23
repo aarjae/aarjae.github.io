@@ -46,4 +46,49 @@ The first argument is the virtual DOM we want rendered and the second argument, 
 
 You can check out the entire code [here](https://gist.github.com/raajable/c29750b60ce39641e71e77c28cb942ec).
 
-Checking out now. Happy coding!
+# Second Post coming in at 1:04PM
+## Automation
+React is purely Javascript based, meaning we can use Javascript data structures to build HTML elements. Let's look at an example. Let's say we wanted to create a list of all the provisions we need for school. With normal HTML we do it like this
+```html
+<html>
+<head>
+	<title>Provisions</title>
+</head>
+<body>
+	<ul class="provisionList">
+		<li>Gari</li>
+		<li>Shito</li>
+		<li>Rice</li>
+		<li>Groundnuts</li>
+	</ul>
+</body>
+</html>
+```
+
+This example here is static, in normal html. What if we wanted to change any of the provisions, let's say remove Gari because we've already bought it. We need to go into our HTML and take out the *<li>* tag containing Gari. In HTML our data is closely binded with our code. Let's try doing this in React.
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Provision</title>
+</head>
+<body>
+	<div id='react-container'></div>
+	<!-- We import the React and ReactDOM library -->
+	<script src='https://unpkg.com/react@15.4.2/dist/react.js' type="text/javascript"></script>
+	<script src='https://unpkg.com/react-dom@15.4.2/dist/react-dom.js' type="text/javascript"></script>
+	<script type="text/javascript">
+		const provisions = ['Gari', 'Shito', 'Rice', 'Groundnuts'] //We create a data structure to hold our provisions
+
+		//Let's build the elements now
+		var provisionsElement = React.createElement('ul', {className : 'provisionsElement'}, 
+            provisions.map((provision, i) => React.createElement('li', {className : i}, provision))
+			)
+
+		//Time to render
+		ReactDOM.render(provisionsElement, document.getElementById('react-container'));
+	</script>
+</body>
+</html>
+```
