@@ -136,7 +136,7 @@ Now let's build our class
 	<script src='https://unpkg.com/react-dom@15.4.2/dist/react-dom.js' type="text/javascript"></script>
 	<script>
 		const provisions = ['Gari', 'Shito', 'Rice', 'Groundnuts'];
-		class ListComponent extends React.Component{
+		class ListProvisions extends React.Component{
 			render(){ //A method that returns a function. Hi Functional Programming
 				return React.createElement('ul', {className : 'list'}, 
                     this.props.provisions.map((item, i) => React.createElement('li', {className : i}, item))
@@ -144,7 +144,7 @@ Now let's build our class
 			}
 		}
 
-		const provisionsComponent = React.createElement(ListComponent, {provisions}, null);
+		const provisionsComponent = React.createElement(ListProvisions, {provisions}, null);
 		ReactDOM.render(provisionsComponent, document.getElementById('react-container'));
 
 	</script>
@@ -160,7 +160,7 @@ class ListComponent extends React.Component
 Now we create a *render* method that returns a function. This function will run anytime our class is called. We want to create an element that lists our provisions data so we need to put that in the *render* function and return it like this
 
 ```javascript
-class ListComponent extends React.Component{
+class ListProvisions extends React.Component{
 			render(){ 
 				return React.createElement('ul', {className : 'list'}, 
                     this.props.provisions.map((item, i) => React.createElement('li', {className : i}, item))
