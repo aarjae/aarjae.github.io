@@ -112,7 +112,76 @@ You may grab the code from [here](https://gist.github.com/raajable/9282631bbe3d3
 When thinking about resusability in an Object Oriented Programming World, we think Classes. Classes allow us to describe a thing, then we can create instances of that class called objects. Now enough with the college OOP talk. Let's get to business
 
 
-Now let's say we have a certain piece of UI that appears so many times on our webpage. Do we hard code the UI each time. Don't Repeat Yourself. Never. Classes to the rescue. I understand there are several ways to create React components but so far I know of two. 
+Now let's say we have a certain piece of UI that appears so many times on our webpage. Do we hard code the UI each time. Don't Repeat Yourself. Never. React Components to the rescue. With components we can create a class that will create new instances of our component whenever we want it to and if we wanted to go further, we could build components on top of other components through good ol' inheritance!. 
+I understand there are several ways to create React components but so far I know of two. 
 
 
-The common style is using the React.createClass() method. This style is very popular in a lot of codebases around the world but it may be deprecated soon. We don't want to write code that will break soon so let's go for a newer style that makes use of the new ES6 class inheritance feature. Yeeaah, let's be progressive :)
+The common style is using the React.createClass() method. This style is very popular in a lot of codebases around the world but it may be deprecated soon. We don't want to write code that will break soon so let's go for a newer style that makes use of the new ES6 class inheritance feature. Yeeaah, let's be progressive. React already has a blueprint class we can inherit from. It's called React.component so we use create a class and inherit from the React.component class using ES6 style
+```javascript
+class Provisions extends React.Component 
+```
+In this piece of code, we created a class and asked it to inherit from React.Component. I think this makes way more sense than using React.createClass() method. Thank you ES6!
+
+
+Now let's build our class
+```html
+<!DOCTYPE html>
+<html>
+<head>
+	<title>React Example</title>
+</head>
+<body>
+	<div id='react-container'></div>
+	<script src='https://unpkg.com/react@15.4.2/dist/react.js' type="text/javascript"></script>
+	<script src='https://unpkg.com/react-dom@15.4.2/dist/react-dom.js' type="text/javascript"></script>
+	<script>
+		const provisions = ['Gari', 'Shito', 'Rice', 'Groundnuts'];
+		class ListComponent extends React.Component{
+			render(){ //A method that returns a function. Hi Functional Programming
+				return React.createElement('ul', {className : 'list'}, 
+                    this.props.provisions.map((item, i) => React.createElement('li', {className : i}, item))
+					)
+			}
+		}
+
+		const provisionsComponent = React.createElement(ListComponent, {provisions}, null);
+		ReactDOM.render(provisionsComponent, document.getElementById('react-container'));
+
+	</script>
+</body>
+</html>
+```
+
+So let's analyze this nasty piece of code bit by bit. We created a class using the class syntax from ES6
+```javascript
+class ListComponent extends React.Component
+```
+
+Now we create a *render* method that returns a function. This function will run anytime our class is called. We want to create an element that lists our provisions data so we need to put that in the *render* function and return it like this
+
+```javascript
+class ListComponent extends React.Component{
+			render(){ 
+				return React.createElement('ul', {className : 'list'}, 
+                    this.props.provisions.map((item, i) => React.createElement('li', {className : i}, item))
+					)
+			}
+		}
+```
+
+Now let's create instances of our class, an object or in React lang a component. We do that by using the *React.createElement()* method like this
+```javascript
+const provisionsComponent = React.createElement(ListComponent, {provisions}, null);
+```
+
+The first argument is the name of the element, in this situation a ReactComponent class. The second is the properties we wish to pass to our class which is the provisions array and the third argument is the children. In this situation we don't want children, so we make it *null*.
+
+Then we render with ReactDOM. You must be familiar with this by now
+
+```javascript
+ReactDOM.render(provisionsComponent, document.getElementById('react-container'));
+```
+
+The idea behind this system is we can create multiple instances from our *ListComponent* class and render it.
+
+Grab the code from [here](https://gist.github.com/raajable/901aec6e2d006861bf45eebcde184b14)
