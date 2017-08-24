@@ -205,4 +205,6 @@ ReactDOM.render(provisionsComponent, document.getElementById('react-container'))
 
 When React.createElement is run on the function, it picks up the argument from the props object and uses it. 
 
+This style arguably keeps things simpler and I also understand this style is better performance-wise. I still don't know why by the way. Hopefully will figure that out in the coming days.
+
 Check out the whole code [here](https://gist.github.com/raajable/4e048596cfee665ec6a788503caa0d67)
