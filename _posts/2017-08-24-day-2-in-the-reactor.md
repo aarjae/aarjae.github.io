@@ -31,4 +31,4 @@ Rendering an element is the most costly DOM operation. It takes a relatively lar
 </html>
 ```
 
-And we want to change the Gari and Shito provisions to Sardine and Milk respectively. Does ReactDOM render everything all over again once you change the elements..? No, it doesn't. ReactDOM compares the old component to the new one, looks at the differences between the two and only changes the element that are different. This keeps rendering as minimal as possible and keep React fast.
+And we want to change the Gari and Shito provisions to Sardine and Milk respectively. Does ReactDOM render everything all over again once you change the elements..? No, it doesn't. ReactDOM compares the old component to the new one, looks at the differences between the two and only changes the elements that are different. This keeps rendering as minimal as possible and keeps React fast.
