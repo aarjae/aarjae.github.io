@@ -1,7 +1,7 @@
 ---
 title : "Day 3 in the Reactor"
 layout : post
-excerpt : "3nd day of my journey studying react"
+excerpt : "3rd day of my journey studying react"
 image : /assets/image/react-logo.png
 tags : 
     - post
