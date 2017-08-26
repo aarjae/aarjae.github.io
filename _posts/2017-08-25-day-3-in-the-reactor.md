@@ -33,4 +33,23 @@ Another slight change, the script tag we are going to be writing our React code 
 This allows Babel to know what to transpile. Now let's get into JSX
 
 ## JSX
+JSX is a preprocessor that allows us to use good ol' XML in our JavaScript code. JSX looks a lot like HTML. Of course, you can use React without JSX, it's what we've been doing the whole time but JSX just makes it easier. Let's try it out
 
+Pure React
+```javascript
+React.DOM.ul(
+	{className : 'myList'}, 
+	React.DOM.li(null, 'foo'),
+	React.DOM.li(null, bar)
+) 
+```
+
+JSX
+```javascript
+<ul className='myList'>
+	<li>foo</li>
+	<li>bar</li>
+</ul>
+```
+
+Looks just like HTML right..? I found a really good introduction to JSX [here](https://facebook.github.io/react/docs/introducing-jsx.html)
