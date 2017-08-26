@@ -184,7 +184,6 @@ The idea behind this system is we can create multiple instances from our *ListCo
 
 Grab the code from [here](https://gist.github.com/raajable/901aec6e2d006861bf45eebcde184b14)
 
-# Fourth Post coming in at 7:18 PM
 ### Stateless Functional Components 
 So we created React components using classes. This style will remind you of the Object Oriented Programming Paradigm. There is another way to create React components and this style follows the Functional Programming paradigm very closely. So a Stateless Functional Component is a pure function. A pure function takes at least one argument, and returns a new value based on that argument. Note that it does not mutate it's argument, it does not change anything around it's world. This follows closely with the idea of immutability in Functional Programming. Creating a React Component using a function can be done like this
 ```javascript
