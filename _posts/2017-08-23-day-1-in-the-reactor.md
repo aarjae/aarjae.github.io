@@ -7,7 +7,6 @@ tags :
     - post
     - react
 ---
-# First Post coming in at 8:23 AM
 
 Starting out with react, I quickly noticed one thing. React is heavily based on ES6 features, from the predominant use of arrow functions to classes and the spread operator. It also borrows a lot of principles from the functional programming world, particularly immutability.
 
@@ -46,7 +45,6 @@ The first argument is the virtual DOM we want rendered and the second argument, 
 
 You can check out the entire code [here](https://gist.github.com/raajable/c29750b60ce39641e71e77c28cb942ec).
 
-# Second Post coming in at 1:04 PM
 ### I like to call this one Automation
 React is purely Javascript based, meaning we can use Javascript data structures to build HTML elements. Let's look at an example. Let's say we wanted to create a list of all the provisions we need for school. With normal HTML we do it like this
 ```html
@@ -107,7 +105,7 @@ React's style is much more handy because now our code has the ability to scale a
 
 You may grab the code from [here](https://gist.github.com/raajable/9282631bbe3d32d463f54bafdfbe16f7)
 
-# Third Post coming in at 5:18 PM
+
 ### Reusability
 When thinking about resusability in an Object Oriented Programming World, we think Classes. Classes allow us to describe a thing, then we can create instances of that class called objects. Now enough with the college OOP talk. Let's get to business
 
