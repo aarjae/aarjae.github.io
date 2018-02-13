@@ -6,7 +6,7 @@
     "email": "raajable@gmail.com",
     "phone": "0558691496 / 0264947070",
     "website": "https://raajable.github.io",
-    "summary": "I am a web developer with a focus on backend. I strive to create lighweight backends that have the ability to scale and are fast using new technologies such as Node.JS",
+    "summary": "I am a web developer with a focus on backend. I strive to create lighweight backends that have the ability to scale and are fast using new technologies such as Node.JS and React",
     "location": {
       "address": "Raaj Ahiable, Bluecrest College",
       "postalCode": "P.O BOX AN18392",
@@ -37,19 +37,65 @@
       "company": "PLEGISHES",
       "position": "Web Developer",
       "website": "https://plegishes.com",
-      "startDate": "2016",
-      "endDate": "",
+      "startDate": "2017",
+      "endDate": "2017",
       "summary": "PLEGISHES is a design firm based in Accra, Ghana",
       "highlights": [
         "Built a landing page for the website"
+      ]
+    },
+    {
+      "company": "BRYAN THE MENSAH",
+      "position": "Web Developer",
+      "website": "http://bryanthemensah.com",
+      "startDate": "2017",
+      "endDate": "2018",
+      "summary": "A hiphop musician based in Ghana",
+      "highlights": [
+        "Built a landing page for his brand and did digital marketing"
+      ]
+    },
+    {
+      "company": "Freelance",
+      "position": "Fullstack Development",
+      "website": "https://pure-plains-55016.herokuapp.com",
+      "startDate": "2017",
+      "endDate": "2017",
+      "summary": "A slack-like office management system",
+      "highlights": [
+        "Built a realtime chatroom and office management system for offices, built with
+        react, express and socket.io"
+      ]
+    },
+    {
+      "company": "Freelance",
+      "position": "Bot Development",
+      "website": "https://pure-plains-55016.herokuapp.com",
+      "startDate": "2017",
+      "endDate": "2017",
+      "summary": "A telegram AI bot built with API.AI",
+      "highlights": [
+        "A telegram chat bot that answers for weather and date and is just conversational"
+      ]
+    },
+    {
+      "company": "Freelance",
+      "position": "Mobile App Development",
+      "website": "https://expo.io/@rjforty/publii",
+      "startDate": "2018",
+      "endDate": "2018",
+      "summary": "A note taking app called Publii",
+      "highlights": [
+        "A note taking app built with react-native. Backend built with Express
+        and MongoDB"
       ]
     }
   ],
   "volunteer": [
     {
-      "organization": "",
-      "position": "",
-      "website": "",
+      "organization": "Developers In Vogue",
+      "position": "Tutor",
+      "website": "https://developersinvogue.org",
       "startDate": "",
       "endDate": "",
       "summary": "",
@@ -92,9 +138,10 @@
     },
     {
       "name": "Database ",
-      "level": "Beginner",
+      "level": "Intermediate",
       "keywords": [
-        "MongoDB"
+        "MongoDB",
+        "PostgreSQL"
       ]
     },
     {
