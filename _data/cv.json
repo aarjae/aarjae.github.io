@@ -5,7 +5,7 @@
     "picture": "",
     "email": "raajable@gmail.com",
     "phone": "0558691496 / 0264947070",
-    "website": "https://rjforty.github.io",
+    "website": "https://aarjae.github.io",
     "summary": "I am a web developer with a focus on backend. I strive to create lighweight backends that have the ability to scale and are fast using new technologies such as Node.JS and React",
     "location": {
       "address": "Raaj Ahiable, Bluecrest College",
@@ -22,8 +22,8 @@
       },
       {
         "network": "Github",
-        "username": "raajable",
-        "url": "https://github.com/rjforty"
+        "username": "aarjae",
+        "url": "https://github.com/aarjae"
       },
       {
         "network": "Medium",
@@ -63,8 +63,7 @@
       "endDate": "2017",
       "summary": "A slack-like office management system",
       "highlights": [
-        "Built a realtime chatroom and office management system for offices, built with
-        react, express and socket.io"
+        "Built a realtime chatroom and office management system for offices, built with react, express and socket.io"
       ]
     },
     {
@@ -86,8 +85,7 @@
       "endDate": "2018",
       "summary": "A note taking app called Publii",
       "highlights": [
-        "A note taking app built with react-native. Backend built with Express
-        and MongoDB"
+        "A note taking app built with react-native. Backend built with Expressand MongoDB"
       ]
     }
   ],
